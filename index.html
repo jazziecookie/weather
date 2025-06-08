@@ -4,32 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <title>Document</title>
+    <link href="weather.css" rel="stylesheet" />
+    <title>Weather app</title>
 </head>
 <body>
-    <span class="display-city">city</span>
-<div id="search-section">
+    <div class="wrapper">
+        <div class="header">
+    <span class="display-city"><strong>Welcome to my weather app</strong></span>
+<div id="search-module">
     <form id="search-form">
-        <input class="city-input" minlength="3" placeholder="Enter a city"> 
+        <input class="city-input" minlength="3" placeholder="Please enter a city"> 
         <input type="submit" value="Search" class="submit-button">
     </form>
 </div>
-<div id="current-weather-section">
-    <span class="display-current-icon"></span> 
-    <span class="display-current-temperature"></span>
-    <span class="display-feels-like-temperature"></span>
-    <span class="display-wind-speed"></span>
-    <span class="display-humidity"></span>
-    <span class="display-current-description"></span>
 </div>
-<div id="forecast-section">
-Tues 🌞 18°C
-Tues 🌞 18°C
-Tues 🌞 18°C
-Tues 🌞 18°C
-Tues 🌞 18°C
-Tues 🌞 18°C
+<div id="today-module">
 </div>
+<div id="forecast-module">
+    <div id="forecast"></div>
+</div>
+</div>
+<footer>
+    Coded by <a href="https://www.shecodes.io/graduates/169060-samantha-ward" target="_blank">Sam</a>. 
+    Opensource on <a href="https://github.com/jazziecookie/weather" target="_blank">Github</a>. 
+    Hosted by <a href="https://jc-weather-app.netlify.app/" target="_blank">netlify</a>.
+</footer>
 <script src="weather.js"></script>
 </body>
 </html>

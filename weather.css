@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+body, 
+html {
+  width: 100%;
+  place-items: center;
+}
+
+body {
+  background-color: #9c3cc9;
+  background-image: url("weatherbg.jpeg");
+  background-size: cover;
+  text-align: center;
+  font-family: "Playwrite DE Grund", Tahoma;
+}
+
+a {
+  color: #000;
+  text-decoration: underline #000;
+}
+
+a:hover {
+text-decoration: #000 wavy underline;
+}
+
+.wrapper {
+  background-color: #5D3D86;
+  background-image: linear-gradient(
+    90deg,
+    hsl(231deg 39% 38%) 0%,
+    hsl(233deg 38% 39%) 6%,
+    hsl(236deg 36% 39%) 13%,
+    hsl(238deg 35% 40%) 19%,
+    hsl(240deg 34% 40%) 25%,
+    hsl(243deg 34% 40%) 31%,
+    hsl(246deg 35% 41%) 37%,
+    hsl(248deg 35% 40%) 44%,
+    hsl(251deg 36% 40%) 50%,
+    hsl(253deg 36% 40%) 56%,
+    hsl(256deg 37% 40%) 63%,
+    hsl(258deg 38% 40%) 69%,
+    hsl(260deg 38% 40%) 75%,
+    hsl(263deg 39% 40%) 81%,
+    hsl(265deg 39% 40%) 87%,
+    hsl(268deg 40% 40%) 94%,
+    hsl(270deg 41% 40%) 100%
+  );
+  display: block;
+  padding: 20px;
+  border: 6px solid #5C6FCE;
+  border-radius: 30px;
+  box-shadow: 0px 2px 20px 20px #8EAFE4;
+}
+
+#search-module {
+margin: 10px;
+}
+
+#today-module {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  border-radius: 20px;  
+  margin: 20px;
+}
+
+#forecast-module {
+  background-color: transparent;
+  border-radius: 20px; 
+  margin: 20px;
+}
+
+#forecast {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 5px;
+grid-row-gap: 5px;
+}
+
+.forecast-wrapper {
+ border-radius: 20px;  
+ background-color: #FFF;
+ border: 5px solid #5C6FCE;
+}
+
+.forecast-day {
+  font-weight: 800;
+  font-size: 20px;
+  margin: 20px;
+}
+
+.city-input {
+  width: 70%;
+  height: 40px;
+  font-size: 25px;
+  border-radius: 10px;
+  border: 2px solid purple;
+  text-align: center;
+  box-shadow: 7px 6px 0px -3px rgba(0,0,0,0.1);
+  font-family: "Playwrite DE Grund", Tahoma;
+
+}
+
+.submit-button {
+  width: 20%;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 20px;
+  border: 2px solid purple;
+  box-shadow: 7px 6px 0px -3px rgba(0,0,0,0.1);
+  font-family: "Playwrite DE Grund", Tahoma;
+  font-style: italic;
+  background-color: lightgrey;
+
+}
+
+.submit-button:hover {
+  background-color:#8BA6DC;
+  cursor: pointer;
+
+}
+
+.display-city {
+  font-size: 40px;
+}
+
+#today {
+  background-color: #FFF;
+  border: 10px solid #5C6FCE;
+  border-radius: 20px;
+}
+
+.header {
+background-color: #5C6FCE;
+padding: 10px;
+background-color: #5C6FCE;
+border-radius: 20px;
+border: 5px solid #4C7FD3;
+text-shadow: 0.07em 0.07em 0.05em rgb(35, 32, 32);
+}
