@@ -2,28 +2,13 @@
 
 body, 
 html {
-  width: 100%;
-  place-items: center;
+  height: 100%;
+ 
 }
 
 body {
-  background-color: #9c3cc9;
-  background-image: url("weatherbg.jpeg");
-  background-size: cover;
-  text-align: center;
-  font-family: "Playwrite DE Grund", Tahoma;
-}
-
-a {
-  color: #000;
-  text-decoration: underline #000;
-}
-
-a:hover {
-text-decoration: #000 wavy underline;
-}
-
-.wrapper {
+  display: grid;
+  place-items: center;
   background-color: #5D3D86;
   background-image: linear-gradient(
     90deg,
@@ -45,9 +30,26 @@ text-decoration: #000 wavy underline;
     hsl(268deg 40% 40%) 94%,
     hsl(270deg 41% 40%) 100%
   );
+  text-align: center;
+  font-family: "Playwrite DE Grund", Tahoma;
+}
+
+a {
+  color: #000;
+  text-decoration: underline #000;
+}
+
+a:hover {
+text-decoration: #000 wavy underline;
+}
+
+.wrapper {
+  background-color: #9c3cc9;
+  background-image: url("weatherbg.jpeg");
+  background-size: cover;
   display: block;
   padding: 20px;
-  border: 6px solid #5C6FCE;
+  border: 5px solid #5C6FCE;
   border-radius: 30px;
   box-shadow: 0px 2px 20px 20px #8EAFE4;
 }
@@ -82,19 +84,20 @@ grid-row-gap: 5px;
 .forecast-wrapper {
  border-radius: 20px;  
  background-color: #FFF;
- border: 5px solid #5C6FCE;
+ border: 3px solid #5C6FCE;
 }
 
 .forecast-day {
   font-weight: 800;
   font-size: 20px;
   margin: 20px;
+  text-decoration: underline #000;
 }
 
 .city-input {
   width: 70%;
   height: 40px;
-  font-size: 25px;
+  font-size: 20px;
   border-radius: 10px;
   border: 2px solid purple;
   text-align: center;
@@ -104,22 +107,21 @@ grid-row-gap: 5px;
 }
 
 .submit-button {
-  width: 20%;
   height: 40px;
   border-radius: 10px;
   font-size: 20px;
   border: 2px solid purple;
   box-shadow: 7px 6px 0px -3px rgba(0,0,0,0.1);
   font-family: "Playwrite DE Grund", Tahoma;
-  font-style: italic;
   background-color: lightgrey;
+  transition: 500ms;
 
 }
 
 .submit-button:hover {
   background-color:#8BA6DC;
   cursor: pointer;
-
+  font-style: italic;
 }
 
 .display-city {
@@ -128,15 +130,14 @@ grid-row-gap: 5px;
 
 #today {
   background-color: #FFF;
-  border: 10px solid #5C6FCE;
+  border: 3px solid #5C6FCE;
   border-radius: 20px;
 }
 
 .header {
-background-color: #5C6FCE;
+background-color: rgba(92,111,206, 0.6);
 padding: 10px;
-background-color: #5C6FCE;
 border-radius: 20px;
-border: 5px solid #4C7FD3;
+border: 3px solid #4C7FD3;
 text-shadow: 0.07em 0.07em 0.05em rgb(35, 32, 32);
 }

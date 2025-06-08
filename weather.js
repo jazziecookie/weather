@@ -26,13 +26,14 @@ function fetchApi(city){
 
   displayToday.innerHTML = `
   <div id="today">
+  <div class="forecast-day">Today</div><p>
   <img src="${city.data.condition.icon_url}"><br />
   <em>${description}</em><br />
     <strong>Current temp:</strong> ${Math.round(city.data.temperature.current)} °C
     <br />
     <strong>Feels like:</strong> ${Math.round(city.data.temperature.feels_like)} °C
     <br />
-    <strong>Wind: </strong>${city.data.wind.speed} <em>metres/second</em>
+    <strong>Wind: </strong>${city.data.wind.speed} m/s
     <br />
   <strong>Humidity: </strong>${city.data.temperature.humidity}%
   </div>
