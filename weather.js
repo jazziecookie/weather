@@ -45,6 +45,10 @@ function fetchApi(city){
  axios.get(forecastApi).then(displayForecast);
 }
 
+// timestamp is a Unix timestamp, represents time as the number of secs that have passed
+//  since January 1, 1970 (also known as the Unix epoch).
+// * 1000 to convert to msecs- the date object in JS uses msecs.
+
  function formatDay(timestamp){
   let date = new Date(timestamp * 1000);
   let days = [
