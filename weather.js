@@ -82,5 +82,8 @@ function displayForecast(response) {
 }
 
 
-
-  
+//revisit - add default (current location)
+//error handling
+//switch themes
+//rebuild from scratch- github commits
+//add readme
